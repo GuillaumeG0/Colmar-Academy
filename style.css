@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+header{
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    z-index: 2;
+    background-color: white;
+}
+
+#header_logo{
+    display: flex;
+    margin-left: 24px;
+    width: 50%;
+    clear: none;
+}
+
+#colmar_academy{
+    height: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 16px 0;
+}
+
+#colmar_academy span{
+    color: rgb(126, 126, 126);
+    font-weight: normal;
+}
+
+#navigateur_pour_desktop{
+    width : 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px;
+}
+
+#navigateur_pour_desktop li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+#navigateur_pour_mobile{
+    display: none;
+}
+
+/*Partie principale du site.*/
+
+main {
+    position: relative;
+    top: 64px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(82, 82, 82);
+}
+
+/*Les classes qui servnt pour les différents articles du site */
+
+.titre_article{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sous_titre_article{
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.text_article{
+    font-size: 18px;
+    margin: 0px;
+}
+
+.article_petit{
+    padding: 32px 0px 32px 24px;
+    display: flex;
+    border-bottom: solid gray 1px;
+    flex-flow: row wrap;
+}
+
+.image_petite_desktop{
+    width: 35%;
+}
+
+.image_petite_mobile{
+    display: none;
+}
+
+.article_petit_text{
+    width: 65%;
+    padding: 30px 0px 30px 24px;
+}
+
+.article_petit_st{
+    margin: 0px;
+    font-size: 24px;
+}
+
+.article_petit_para{
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.petit_article_a{
+    text-decoration: none;
+}
+
+
+
+/*Partie 1*/
+
+#partie1 {
+    background-color: rgb(207, 207, 207);
+    display: flex;
+}
+
+#partie1 img{
+    margin: 32px 24px;
+    width: 60%;
+}
+
+#partie1_text {
+    margin-left: 20px;
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#partie1 h3{
+    padding: 24px 0;
+}
+
+#partie1 a{
+    font-size: 24px;
+    color: rgb(207, 207, 207);
+    background-color: rgb(82, 82, 82);
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Partie 2 */
+
+#partie2{
+    display: flex;
+}
+
+#article1{
+    width: 64%;
+    padding: 32px 24px;
+}
+#article1 img{
+    width: 100%;
+}
+
+#article1_text{
+    margin-top: 32px; 
+    width: 100%;
+}
+
+#article1 p{
+    margin: 32px 0px;
+}
+
+#article1 blockquote{
+    margin: 0 0;
+}
+
+/* Partie 3 */
+
+#partie3{
+    width: 36%;
+    border: solid gray 1px;
+    margin: 0px;
+}
+
+#petit_article3{
+    background-color: rgb(207, 207, 207);
+}
+
+/* Partie 4 */
+
+#partie4{
+    background-color: rgb(207, 207, 207);
+}
+
+#partie4 h2{
+    padding: 32px 0;
+    text-align: center;
+}
+
+.courses{
+    padding: 0 56px;
+    display: flex;
+}
+
+.course{
+    background-color: white;
+    margin: 16px 16px;
+    width: 31%;
+}
+
+.course img{
+    width: 100%;
+}
+
+.course_text{
+    padding: 16px;
+}
+
+/* Partie 5 */
+
+#partie5 h2{
+    padding: 32px 0;
+    text-align: center;
+}
+
+#these1{
+    display: flex;
+}
+
+#contenu_these{
+    width: 60%;
+    padding: 0 24px 24px 24px;
+}
+
+#contenu_these video{
+    width: 100%;
+}
+
+#autres_these{
+    width: 40%;
+}
+
+#these2{
+    padding: 32px 0px 32px 24px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+}
+
+#these3{
+    padding: 32px 0px 32px 24px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/* Footer */
+footer{
+    position: relative;
+    top: 64px;
+    width: 100%;
+    border-top: solid 1px rgb(126, 126, 126);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(82, 82, 82);
+    display: flex;
+}
+
+footer p{
+    padding: 16px 24px;
+    width: 50%;
+    margin: 0;
+}
+
+#droite_footer{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
+}
+
+footer li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    #header_logo{
+        display: none;
+    }
+    #navigateur_pour_desktop{
+        display: none;
+    }
+    #navigateur_pour_mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #partie1{
+        display: block;
+    }
+    #partie1 img{
+        margin: 0px;
+        width: 100%;
+    }
+    #partie1_text{
+        width: 100%;
+        padding: 32px 16px;
+    }
+
+    #article1{
+        display: none;
+    }
+
+    #partie3{
+        width: 100%;
+        padding: 16px;
+        border: none;
+    }
+    .article_petit{
+        padding: 0px;
+    }
+    .image_petite_desktop{
+        display: none;
+    }
+    .image_petite_mobile{
+        display: initial;
+        width: 100%;
+        padding: 0px;
+    }
+    .article_petit_text{
+        width: 100%;
+        padding: 16px 16px 32px 16px;
+        text-align: center;
+    }
+    #petit_article3{
+        background-color: white;
+    }
+
+    #partie4{
+        background-color: white;
+    }
+    .courses{
+        display: block;
+    }
+    .courses img{
+        display: none;
+    }
+    .courses p{
+        display: none;
+    }
+    .course{
+        background-color: rgb(207, 207, 207);
+        width: 100%;
+    }
+
+    #contenu_these{
+        width: 100%;
+    }
+    #contenu_these_text{
+        display: none;
+    }
+    #autres_theses{
+        display: none;
+    }
+
+    footer p{
+        width: 100%;
+    }
+    #droite_footer{
+        display: none;
+    }
+}
+
